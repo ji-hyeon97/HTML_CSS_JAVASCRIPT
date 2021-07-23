@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <fieldset>
+    <legend>배송 정보</legend>
+    <ul>
+      <li>
+        <label for="name">이름</label>
+        <input type="text" id="name">
+      </li>
+      <li>
+        <label for="addr">배송주소</label>
+        <input type="text" id="addr">
+      </li>
+      <li>
+        <label for="mail">이메일</label>
+        <input type="text" id="mail">
+      </li>
+      <li>
+        <label for="phone">연락처</label>
+        <input type="text" id="phone">
+      </li>
+      <li>
+        <label for="where">배송 지정<small>(주문일로부터 최소 3일 이후)</small></label><br>
+        <input type="text" id="where" value="연도-월-일">
+        </li>
+    </ul>
+  </fieldset>
+  <input type="submit" value="주문하기">
+  <input type="submit" value="취소하기">
+  <hr>
+  <fieldset>
+    <label>아이디 : </label>
+    <input type="text" size="10">
+    <label>비밀번호 : </label>
+    <input type="text" size="10">
+    <input type="image" src="images/login.png" alt="로그인">
+  </fieldset> 
+  <form>
+    <input type="button" value="공지 창 열기" onclick="window.open('notice.html')">
+  </form>
+  <hr>
+  <fieldset>
+    <legend>반품 정보</legend>
+    <p>만일 수령한 상품에 문제가 있다면 즉시 반품 신청해 주세요.
+      반품 신청시 상품의 상태를 사진으로 첨부해 주세요.
+    </p>
+    <hr>
+    <input type="file">
+  </fieldset>
+  <hr>
+  <input type="hidden" value="사이트를 통한 직접 로그인">
+  <label for="user-id">아이디 : </label>
+  <input type="text" id='user-id' size="10">
+  <label for="password">비밀번호 : </label>
+  <input type="text" id="password" size="10">  
+  <input type="submit" value="로그인">
+</body>
+</html>

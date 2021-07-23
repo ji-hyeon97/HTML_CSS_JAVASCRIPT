@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <fieldset>
+    <legend>배송 정보</legend>
+    <label for="user-name">이름</label>
+    <input type="text" id="user-name" autofocus><br>
+    <label for="addr">배송 주소</label>
+    <input type="text" id="addr"><br>
+    <label for="mail">이메일</label>
+    <input type="email" id="mail"><br>
+    <label for="phone">연락처</label>
+    <input type="tel" id="phone" placeholder="하이픈 빼고 입력해 주세요.(01012345678)">
+    <br>
+    <label for="where">배송 지정</label>
+    <input type="text" id="where" value="연도-월-일">
+    <small>(주문일로부터 최소 3일 이후)</small>
+  </fieldset>
+  <hr>
+  <fieldset>
+    <legend>배송 정보</legend>
+    <ul id="shipping">
+      <li>
+        <label for="product">주문 상품</label>
+        <input type="text" id="product" value="상품용 3kg" readonly>
+        </li>
+      <li>
+        <label for="user-name">이름</label>
+        <input type="text" value="고경희" required>
+      </li>
+      <li>
+        <label for="addr">배송 주소</label>
+        <input type="text" required>
+      </li>
+      <li>
+        <label for="mail">이메일</label>
+        <input type="email" id="mail">
+      </li>
+      <li>
+        <label for="phone">연락처</label>
+        <input type="tel" id="phone" placeholder="하이픈을 빼고 입력해 주세요. (01012345678)">
+      </li>
+      <li>
+        <label for="where">배송 지정</label>
+        <input type="date" id="where" ><small>(주문일로부터 최소 3일 이후)</small>
+      </li>
+  </fieldset>
+  <div>
+    <input type="submit" value="주문하기">
+    <input type="submit" value="취소하기">
+  </div>
+  <hr>
+  <h2>회원 가입을 환영합니다</h2>
+  <fieldset>
+    <legend>사용자 정보</legend>
+    <ul>
+      <li>
+        <label for="user-id">아이디</label>
+        <input type="text" id="user-id" placeholder="4자~10자 사이, 공백없이" required>
+      </li>
+      <li>
+        <label for="mail">이메일</label>
+        <input type="email" id="mail" required>
+      </li>
+      <li>
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" placeholder="문자와 숫자, 특수 기호 포함">
+      </li>
+      <li>
+        <label for="password_c">비밀번호 확인</label>
+        <input type="password" id="password_c" required>
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>이벤트와 새로운 소식</legend>
+    <input type="radio" name="mailing" id="mailing_y">
+    <label for="mailing_y">메일수신</label>
+    <input type="radio" name="mailing" id="mailing_x">
+    <label for="mailing_x">메일 수신 안 함</label>
+  </fieldset>
+  <input type="submit" value="가입하기">
+  <input type="submit" value="취소">
+</body>
+</html>

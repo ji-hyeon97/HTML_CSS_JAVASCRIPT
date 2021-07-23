@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action "">
+    <label>아이디 : <input type="text"></label>
+    <label>비밀번호 : <input type="password"></label>
+    <input type="submit" value="로그인">
+  </form>
+  <form action="">
+    <ul id="shipping">
+      <li>
+        <label for="prod">주문 상품</label>
+        <input type="text" id="prod" value="상품용 3kg">
+      </li>
+      <li>
+        <label for="user-name">이름</label>
+        <input type="text" id="user-name">
+      </li>
+      <li>
+        <label for="addr">배송 주소</label>
+        <input type="email" id="addr">
+      </li>
+      <li>
+        <lable for="mail">이메일</lable>
+        <input type="email" id="mail">
+      </li>
+      <li>
+        <label for="phone">연락처</label>
+        <input type="tel" id ="phone">
+      </li>
+    </ul>
+    <h2>레드향 주문하기</h2>
+  </form>
+  <fieldset>
+    <legend>상품 선택</legend>
+    <p><b>주문할 상품을 선택해 주세요.</b></p>
+    <ul>
+      <li>
+        <label><input type="checkbox" value="s_3">선물용 3kg</label>
+        <input type="number" min="0" max="5">개 (최대 5개)
+      </li>
+      <li>
+        <label><input type="checkbox" value="s_5">선물용 5kg</label>
+        <input type="number" min="0" max="3">개 (최대 3개)
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <label><input type="checkbox" value="f_3">가정용 3kg</label>
+        <input type="range" min="0" max="5">개 (최대 5개)
+      </li>
+      <li>
+        <label><input type="checkbox" value="f_5">가정용 5kg</label>
+        <input type="range" min="0" max="3">개 (최대 3개)
+      </li>
+    </ul>
+    <p><b>포장 선택</b></p>
+    <ul>
+      <li>
+        <label><input type="radio">선물 포장</label>
+      </li>
+      <li>
+        <label><input type="radio">선물 포장 안 함</label>
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>배송 정보</legend>
+    <ul>
+      <li>
+        <label for="name">이름</label>
+        <input type="text" id="name">
+      </li>
+      <li>
+        <label for="addr">배송 주소</label>
+        <input type="text" id="addr">
+      </li>
+      <li>
+        <label for="email">이메일</label>
+        <input type="email" id="email">
+      </li>
+    </ul>
+  </fieldset>  
+  <form>
+    <h2>날짜 지정하기</h2>
+    <input type="date">
+    <input type="month">
+    <input type="week">
+    <hr>
+    <h2>시간 지정하기</h2>
+    <input type="time">
+    <input type="datetime-local">
+    <hr>
+    <h2>범위 제한하기</h2>
+    <input type="date" min="2020-02-01" max="2020-02-15">
+    <input type="time" min="14:00" max="16:00">
+  </form>
+  <form>
+    <fieldset>
+      <input type="hidden" name="url" id="url" value="사이트를 통한 직접 로그인">
+      <label>아이디 : <input type="text" id="user-id" size="10"></label>
+      <label>비밀번호 : <input type="text" id="user_pw" size="10"></label>
+      <input type="submit" value="로그인">
+    </fieldset>
+  </form>
+</body>
+</html>
