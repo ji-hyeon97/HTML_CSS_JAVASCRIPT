@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/gugudan-table.css">
+</head>
+<body>
+  <h2>구구단</h2>
+  <script>
+    var i, j;
+
+    for(i = 1; i <= 9; i++){
+      document.write("<div>");
+      document.write("<h3>" + i + "단</h3>");
+      for (j = 1; j <= 9; j++){
+        document.write(i + "X" + j + "=" + i*j +"<br>");
+      }
+      document.write("</div>");
+      if (i === 3){
+        break;
+        }
+      }
+        
+  </script>  
+  <script>
+    var i, j;
+
+    for(i=1; i<=9; i++){
+      document.write("<table>");
+      document.write("<tr><th>" + i + "단</th></tr>");
+
+      for(j=1; j<=9; j++){
+        document.write("<tr><td>" + i + "X" + j + "=" + i*j +"</td></tr>");
+      }
+      document.write("</table>");
+
+      if(i===3){
+        break;
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>자리배치표</h2>
+  <Script>
+    var memNum = prompt("입장객은 몇 명인가요?");
+    var rowNum = prompt("한 열에 몇 명씩 앉습니까?");
+    var colNum;
+
+    if(memNum%rowNum===0){
+      colNum = parseInt(memNum/rowNum);
+    }
+    else{
+      colNum = parseInt(memNum/rowNum)+1;
+    }
+    for (var i = 0; i < colNum; i++){
+      for (var j=1; j<=rowNum; j++){
+        seatNo = i*rowNum + j;
+        if(seatNo>memNum){
+          break;
+        }
+        document.write("좌석 " + seatNo +" ");
+      }
+      document.write("<br>");
+   }
+  </Script>
+  
+</body>
+</html>
