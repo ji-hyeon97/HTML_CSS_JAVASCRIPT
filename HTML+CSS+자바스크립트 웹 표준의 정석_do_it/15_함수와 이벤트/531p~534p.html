@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function addNumber(num1,num2){
+      var sum = num1 + num2;
+      return sum;
+    }
+    var result = addNumber(2,3);
+    document.write("두 수를 더한 값: "+result);
+  </script>
+  <br>
+  <script>
+    function addNumber(num1,num2){
+      return num1 + num2;
+    }
+    var result = addNumber(2,3);
+    document.write("두 수를 더한 값: " + result);
+  </script>
+  <br>
+  <script>
+    function multiple(a, b=5, c=10){//기본값
+      return a*b+c;
+    }
+    multiple(5,10,20);//a=5, b=10, c=20
+    multiple(10,20);//a=10, b=20, c=10
+    multiple(30);//a=30, b=5, c=10
+  </script>
+  <script>
+    function calcSum(n){
+      var sum =0;
+      for( let i=1; i<n+1; i++){
+        sum += i;
+      }
+      document.write("1부터"+n+"까지 더하면"+sum);
+    }
+    calcSum(10);
+  </script>
+  <br>
+  <script>
+    var userNumber = parseInt(prompt("얼마까지 더할까요?"));
+    function calcSum(n){
+      var sum=0;
+      for(let i=1; i<n+1; i++){
+        sum +=i;
+      }
+      document.write("1부터 "+n+"까지 더하면"+sum);
+    }
+    calcSum(userNumber);
+  </script>
+</body>
+</html>

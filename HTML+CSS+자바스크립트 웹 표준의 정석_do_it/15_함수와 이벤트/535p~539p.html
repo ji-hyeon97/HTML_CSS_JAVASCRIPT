@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .accent{
+      color :blue;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    var sum = function (a,b){
+      return a+b;
+    }
+    document.write("함수 실행 결과" +sum(10,20));
+  </script>
+  <br>
+  <script>
+    //즉시실행함수1
+    (function() {
+      var userName = prompt("이름을 입력하세요.");
+      document.write("안녕하세요 ? <span class = 'accent'>"+userName +"</span> 님!");
+    }());
+  </script>
+  <br>
+  <script>
+    //즉시 실행함수2
+    (function(a,b) {
+      sum = a+b;
+    }(100,200));
+    document.write("함수 실행 결과 : " +sum);
+  </script>
+  <!-- 
+    const hi = function(){
+      return "안녕하세요?";
+    }
+
+    const hi = () => {
+      return "안녕하세요?"
+    };
+
+    const hi = () => "안녕하세요?";
+
+    const hi = function(user){
+      document.write(user + "님, 안녕하세요?");
+    }
+
+    const hi = user =>{
+      document.write(user + "님, 안녕하세요?");
+    }
+
+    const sum = function(a,b){
+      return a+b;
+    }
+
+    const sum = (a,b) =>a+b;
+   -->
+</body>
+</html>
